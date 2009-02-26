@@ -1,5 +1,8 @@
 = Rails Localisation YMAL Auto Translator
 
+Use it:
+  http://tanyi.info/rails-localisation-yaml-translator.html
+
 This little tool will automatically translate Rails localization yaml data into your specific.
 This translator understands YMAL localisation data files, and will automatically presever placeholder strings ({{foo}}) in the cointent.
 
