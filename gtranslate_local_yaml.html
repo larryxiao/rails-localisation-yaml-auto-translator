@@ -66,6 +66,7 @@
     <script type="text/javascript" src="http://www.prototypejs.org/assets/2008/9/29/prototype-1.6.0.3.js"></script>
     -->
     <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="encoder.js"></script>
     <script type="text/javascript">
 
     google.load("language", "1");
@@ -271,6 +272,8 @@
     {
         content = content.gsub(/\<span\s+class\=\"notranslate\"\>\{\{(.*?)\}\}\<\/span\>/,
             '{{#{1}}}');
+
+        content = Encoder.htmlDecode(content);
 
         resultField.value += content + '"';
 
